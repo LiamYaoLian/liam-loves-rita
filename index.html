@@ -7,7 +7,14 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    
+
   <div class="container">
+
+    <audio id="backgroundAudio" autoplay loop style="margin-top: 36px; margin-bottom: 120px;">
+        <source src="./audio/audio1.mp3" type="audio/mp3">
+    </audio>
+
     <h1>Our Memories <span>❤️</span></h1>
     <hr class="divider">
 
@@ -41,8 +48,8 @@
 
     <div class="memory-card">
         <div class="photo-frame">
-          <img src="./imgs/gift1.jpg" alt="Gentleness" class="photo">
-          <p class="photo-title">Gifts Traveling Halfway Around the World</p>
+          <img src="./imgs/gift1.jpg" alt="Gift 1" class="photo">
+          <p class="photo-title">Gifts Traveling Halfway Around the World 1</p>
         </div>
         <p class="caption">
 
@@ -67,7 +74,45 @@
             and knew you were with me.<br/>
 
         </p>
-      </div>
+    </div>
+
+    <div class="memory-card">
+        <div class="photo-frame">
+          <img src="./imgs/gift2.jpg" alt="Gift 2" class="photo">
+          <p class="photo-title">Gifts Traveling Halfway Around the World 2</p>
+        </div>
+        <p class="caption">
+
+            The silence of my room roared loud, <br/> 
+            filled with cars, children, and booming loneliness—  <br/>
+            but not with you.  <br/><br/>
+
+            The air was thick with scents—  <br/>
+            leaves, rain, and my bleeding heart—  <br/>
+            but not with yours.  <br/><br/>
+
+            The walls pressed hard, unyielding,  <br/>
+            tables and my bones when I hugged myself,  <br/>
+            but without your touch.  <br/><br/>
+
+            Then came a package:  
+            a radio, a Shiba carrying your perfume,  <br/>
+            paintings and photos alive with your presence.  <br/><br/>
+
+            And suddenly, I could hear you,  <br/>
+            smell you, feel you—  <br/>
+            and knew you were with me.<br/>
+
+        </p>
+    </div>
   </div>
 </body>
+<script>
+    const audio = document.getElementById('backgroundAudio');
+    window.addEventListener('scroll', () => {
+        audio.play().catch(error => {
+                console.error("Autoplay prevented:", error);
+            });
+    });
+</script>
 </html>
