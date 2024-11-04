@@ -18,8 +18,8 @@
   .container {
     text-align: center;
     padding: 20px;
-    width: 100%;
-    max-width: 80%;
+    width: 90%;
+    max-width: 600px;
   }
   
   h1 {
