@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
 
-  <div class="container">
+ <div>
+    <h2>Ready for our journey? </h2><br/>
+    <button id="beginButton" onclick="showAndPlayAudio()">Yes</button>
+ </div>
+    
+  <div class="container" id="main" style="display: none">
 
     <audio id="backgroundAudio" autoplay loop style="margin-top: 36px; margin-bottom: 120px;">
         <source src="./audio/audio1.mp3" type="audio/mp3">
@@ -26,7 +30,7 @@
       </div>
       <p class="caption">
         Curious souls, we sought to grow, <br/>
-        signed up for the course, and our conversation flowed. <br/>
+        signed up for the same course, and our conversation flowed. <br/>
         You wavered on flights, unsure if you'd stay, <br/>
         while advice from others pulled both ways. <br/>
         Some said go, and some said stay, <br/>
@@ -43,7 +47,18 @@
         <img src="./imgs/chat1.jpg" alt="Gentleness" class="photo chat">
         <p class="photo-title">Your Gentleness</p>
       </div>
-      <p class="caption">I love that you have been gentle and kind. </p>
+      <p class="caption">
+        In quiet moments, your warmth does shine, <br/>
+        A gentle spirit, a heart so kind. <br/> 
+        With every word, a soothing balm, <br/> 
+        In your presence, the world feels calm. <br/>  
+
+        Through trials faced, your patience flows,  <br/>
+        In acts of love, your kindness grows. <br/>  
+        I cherish the light that you impart,  <br/>
+        For gentle souls like you warm the heart. <br/> 
+
+      </p>
     </div>
 
     <div class="memory-card">
@@ -426,33 +441,17 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
 </body>
 <script>
-    const audio = document.getElementById('backgroundAudio');
-    window.addEventListener('scroll', () => {
-        audio.play().catch(error => {
-                console.error("Autoplay prevented:", error);
-            });
-    });
+
+    function showAndPlayAudio() {
+        const audio = document.getElementById('backgroundAudio');
+        const main = document.getElementById('main');
+        main.style.display = 'block';
+        audio.play();
+    }
+    
+    
 </script>
 </html>
