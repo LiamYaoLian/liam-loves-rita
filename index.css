@@ -85,4 +85,8 @@
     font-style: italic;
     margin-top: 15px;
   }
+
+  .chat {
+    width: 50%; height: 700px; margin: 0 auto;
+  }
   
