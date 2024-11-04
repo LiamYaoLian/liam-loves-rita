@@ -61,10 +61,12 @@
   }
   
   .photo {
-    width: 100%;
+    width: auto;
     height: auto;
+    max-height: 700px;
     border-radius: 10px;
     display: block;
+    margin: 0 auto;
   }
   
   .photo-title {
@@ -87,7 +89,7 @@
   }
 
   .chat {
-    width: 50%; height: 700px; margin: 0 auto;
+    width: 50%; 
   }
   
 

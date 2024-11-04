@@ -8,7 +8,7 @@
 </head>
 <body>
 
- <div>
+ <div id="startDiv">
     <h2>Ready for our journey? </h2><br/>
     <button id="beginButton" onclick="showAndPlayAudio()">Yes</button>
  </div>
@@ -448,8 +448,10 @@
     function showAndPlayAudio() {
         const audio = document.getElementById('backgroundAudio');
         const main = document.getElementById('main');
+        const startDiv = document.getElementById('startDiv');
         main.style.display = 'block';
         audio.play();
+        startDiv.style.display = 'none';
     }
     
     
